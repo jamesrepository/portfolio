@@ -1,0 +1,19 @@
+{
+  "name": "james_portfolio2k19",
+  "version": "1.0.0",
+  "description": "Fresh new portoflio 2k19",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Niño James Quibido",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6"
+  }
+}
