@@ -4,9 +4,95 @@
     body, p - Open sans
 */
 
+body {
+    background: darkcyan;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Poppins', sans-serif;
 }
+
+.bigspace {
+    padding: 100rem 0;
+}
+
+.angle-before {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
+    margin-bottom: -101px !important;
+}
+
+.angle-after {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
+    margin-bottom: -101px !important;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 5rem;
+    transition: all 300ms ease;
+}
+
+.header-bg {
+    background: #fff;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: right;
+    width: 100%;
+}
+.menu {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+
+}
+.menu .menu-item {
+    display: inline-block;
+    padding: 2.2rem 0;
+}
+
+.menu .menu-item a {
+    margin: 0 15px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.header-bg .menu .menu-item a {
+    color: #222222;
+}
+
+.logo {
+    width: 200px;
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-bg .logo {
+    color: #222;
+}
+
 .slide-navigation {
     display: flex;
     flex-direction: column;
@@ -39,4 +125,30 @@ h1, h2, h3, h4, h5 {
 .nav-item a:hover {
     color: #000000;
     transition: color 0.4s ease-in-out;
+}
+
+/* Hero */
+.hero-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.hero-title {
+    margin-bottom: 1rem;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    margin-bottom: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.hero-descrip {
+    max-width: 400px;
+    font-weight: bold;
 }
