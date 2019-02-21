@@ -23,3 +23,11 @@ function getHeroHeight() {
     headerInfo.style.minHeight = `${window.innerHeight}px`;
     console.log(window.innerHeight);
 }
+
+
+// Background Hero
+const heroWrap = document.querySelector('.hero');
+const heroImg = document.querySelector('.hero-img img');
+const heroImgSrc = heroImg.getAttribute('src');
+
+heroWrap.style.background = `url(${heroImgSrc}) no-repeat center center`;

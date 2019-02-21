@@ -5,7 +5,7 @@
 */
 
 body {
-    background: darkcyan;
+    background: #5516a6;
 }
 
 h1, h2, h3, h4, h5 {
@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5 {
 
 .angle-before {
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
-    margin-bottom: -101px !important;
+    margin-top: -101px !important;
 }
 
 .angle-after {
@@ -128,6 +128,22 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Hero */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.hero-img img {
+    display: none;
+}
+
 .hero-info {
     display: flex;
     justify-content: center;
@@ -139,6 +155,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 1rem;
     font-size: 45px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 .hero-subtitle {
@@ -146,9 +163,13 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 4px;
+    background: -webkit-linear-gradient(92deg, #ffc507, #fb6e1e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-descrip {
     max-width: 400px;
     font-weight: bold;
+    color: #ffffff;
 }
