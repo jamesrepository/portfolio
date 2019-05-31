@@ -1,0 +1,195 @@
+$primary:#42a5f5;
+@import '~bootstrap/scss/bootstrap';
+@import 'reset';
+@import 'heading';
+
+
+.services {
+    padding: 15rem 0 90px;
+    background: #fff;
+}
+
+.services-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 10%;
+}
+
+.services .title {
+    margin-bottom: 1rem;
+    font-size: 40px;
+    font-weight: bold;
+    color: #242f51;
+}
+
+.services p {
+    color: #7c8190;
+}
+
+/* Experiece */
+.experience {
+    padding: 250px 0 120px;
+    background: #fafbfb;
+}
+
+.experienced-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 10%;
+}
+
+.experience .title {
+    margin-bottom: 1rem;
+    font-size: 40px;
+    font-weight: bold;
+    color: #242f51;
+}
+
+.experience p {
+    color: #7c8190;
+}
+
+.methodology {
+    padding: 220px 0 90px;
+    background: #fbb03b;
+}
+
+.card-methodology-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-methodology {
+    display: flex;
+    width: 300px;
+    height: 430px;
+    padding: 40px;
+    flex-direction: column;
+    margin: 1.5%;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.methodology .title {
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 42px;
+    letter-spacing: 0.5px;
+}
+
+.card-methodology h4 {
+    margin-top: 40px;
+    margin-bottom: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #242f51;
+}
+
+.card-methodology p {
+    font-weight: 500;
+    color: #666;
+}
+
+.footer {
+    padding: 150px 0;
+}
+
+.big-email {
+    margin: 0 auto;
+    padding: 50px;
+    border: 2px solid #ebebeb;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0px 15px 25px #ebebeb;
+}
+
+.big-email span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #a9a8b9;
+}
+
+.big-email a {
+    display: block;
+    font-weight: bold;
+    font-size: 50px;
+    color: #6c63ff;
+}
+
+/* Experienced */
+.experienced {
+    padding: 200px 0 0;
+}
+
+.experienced h3 {
+    margin-bottom: 2.5rem;
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+    color: #252f52;
+}
+
+.experienced p {
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: #797b82;
+    font-size: 16px;
+    line-height: 2;
+    max-width: 550px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.7px;
+}
+
+.exp-lists {
+    padding-left: 8rem;
+}
+
+.exp-lists .list {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.exp-lists .list:last-child {
+    margin-bottom: 0;
+}
+
+.exp-lists .list::before {
+    content: "";
+    display: block;
+    background: #fbb03b;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 6px;
+    left: -40px;
+    border-radius: 100%;
+}
+
+.exp-lists .list .title {
+    color: #252f52;
+    font-weight: bold;
+}
+
+.exp-lists .list .date {
+    color: #797b82;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
