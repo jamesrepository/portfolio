@@ -5,7 +5,8 @@
   "description": "Fresh new portoflio 2k19",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [
     "portfolio"
@@ -21,5 +22,9 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.5.0",
+    "webpack-merge": "^4.2.1"
   }
 }
