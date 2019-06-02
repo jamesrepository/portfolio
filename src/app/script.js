@@ -1,15 +1,15 @@
 // Nav Scrolled Effect
-// const header = document.querySelector('.header');
+const header = document.querySelector('.header');
 
-// window.addEventListener('scroll', toggleHeaderBg);
+window.addEventListener('scroll', toggleHeaderBg);
 
-// function toggleHeaderBg() {
-//     if(window.pageYOffset > 15) {
-//         header.classList.add('header-bg');
-//     } else {
-//         header.classList.remove('header-bg');
-//     }
-// }
+function toggleHeaderBg() {
+    if(window.pageYOffset > 15) {
+        header.classList.add('header-bg');
+    } else {
+        header.classList.remove('header-bg');
+    }
+}
 
 
 // Adjust Element base on window size
