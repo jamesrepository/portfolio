@@ -1,7 +1,6 @@
 
 
 html {
-    font-size: 62.5%;
 }
 
 body {
@@ -35,6 +34,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .angle-after {
+    position: relative;
+    top: -1px;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
     margin-bottom: -101px !important;
 }

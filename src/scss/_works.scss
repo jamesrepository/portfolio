@@ -1,0 +1,23 @@
+/* Works */
+.works {
+    padding: 12rem 0 9rem;
+    background: #fafbfb;
+
+    .title {
+        margin-bottom: 5rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #242f51;
+        text-align: center;
+    }
+}
+
+.works-container {
+    display: flex;
+
+    .works-box {
+        img {
+            width: 100%;
+        }
+    }
+}

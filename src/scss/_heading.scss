@@ -8,8 +8,8 @@
 }
 
 .header-bg {
-    background: transparent;
-    /* box-shadow: 0px 2px 40px #3f3d56; */
+    background: #fff;
+    box-shadow: 0px 2px 40px #dedde6;
 }
 
 .nav-container {
@@ -42,28 +42,40 @@
     padding: 2.2rem 0;
 }
 
-.menu .menu-item a {
-    margin: 0 15px;
-    font-weight: bold;
-    color: #fff;
-    font-size: 1rem;
+.menu {
+    .menu-item {
+        a {
+            margin: 0 15px;
+            font-weight: bold;
+            color: $black;
+            font-size: 1rem;
+        }
+    }
 }
 
-.header-bg .menu .menu-item a {
-    color: #222222;
+.header-bg {
+    .menu {
+        .menu-item {
+            a {
+            color: #222222;
+            }
+        }
+    }
 }
 
 .logo {
     width: 200px;
-    color: #fff;
+    color: $black;
     font-size: 1.4rem;
     letter-spacing: -1px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
 }
 
-.header-bg .logo {
-    color: #222;
+.header-bg {
+    .logo {
+        color: $black;
+    }
 }
 
 .slide-navigation {
@@ -105,7 +117,7 @@
     position: relative;
     overflow: hidden;
     // background: url(../images/background-text.jpg) left no-repeat;
-    // background: url(../images/portfolio-pattern.jpg) left no-repeat;
+    background: url("/src/images/portfolio-pattern.jpg") left no-repeat;
 }
 
 .hero-img {

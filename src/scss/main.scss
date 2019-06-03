@@ -1,12 +1,13 @@
-$primary:#42a5f5;
+@import 'variables';
 @import '~bootstrap/scss/bootstrap';
 @import 'reset';
 @import 'heading';
+@import 'works';
 
 
 .services {
     padding: 15rem 0 90px;
-    background: #fff;
+    background: $white;
 }
 
 .services-info {
