@@ -1,0 +1,55 @@
+/* Methodology */
+.methodology {
+    position: relative;
+    padding: 5rem 0 1rem;
+    background: $yellow;
+
+    .title {
+        color: $white;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 60px;
+        font-size: 2rem;
+        letter-spacing: 0.5px;
+    }
+}
+
+.card-methodology-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-methodology {
+    display: flex;
+    max-width: 300px;
+    width: auto;
+    padding: 40px;
+    flex-direction: column;
+    margin: 0 1.5% 2rem;
+    border-radius: 20px;
+    background: $white;
+    text-align: center;
+
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.card-methodology h4 {
+    margin-top: 40px;
+    margin-bottom: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: $darkblue;
+}
+
+.card-methodology p {
+     font-weight: 400;
+    color: $gray;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+}

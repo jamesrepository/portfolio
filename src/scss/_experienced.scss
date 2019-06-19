@@ -1,0 +1,65 @@
+/* Experienced */
+.experienced {
+    padding: 5rem 0 3rem;
+ 
+    .title {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: $darkblue;
+        text-align: center;
+    }
+    
+    p {
+        margin-bottom: 40px;
+        font-weight: 400;
+        color: $gray;
+        font-size: 0.9rem;
+        line-height: 2;
+        max-width: 550px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.7px;
+        text-align: center;
+        
+    }
+}
+
+.exp-lists {
+    padding-left: 3rem;
+    
+    .list {
+        position: relative;
+        margin-bottom: 3rem;
+
+        .title {
+            margin-bottom: 0;
+            color: $darkblue;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: left;
+        }
+        .date {
+            color: $gray;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            background: $yellow;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 6px;
+            left: -40px;
+            border-radius: 100%;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+    }
+}

@@ -1,0 +1,130 @@
+@media only screen and (min-width: 768px) {
+    /* Reset */
+    .diagonal {
+        top: 100%;
+    }
+
+    /* Navigation */
+    .menu-container {
+        display: flex;
+    }
+
+    .mobile-menu-box {
+        display: none;
+    }
+
+    /* Header */
+    .header {
+        padding: 0 3rem;
+    }
+
+    /* Hero */
+    .hero-bg {
+        padding: 0;
+    }
+
+    .hero-info {
+        align-items: flex-start;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-descrip {
+        font-size: 1rem;
+        text-align: left;
+    }
+    .btn-lg {
+        font-size: 1.25rem;
+    }
+    .hero-img {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    /* Works */
+    .works {
+        padding: 10rem 0 2rem;
+        .title {
+            font-size: 2.5rem;
+        }
+    }
+
+    .works-container {
+        flex-direction: row;
+    }
+
+    /* Services */
+    .services {
+        padding: 10rem 0 6rem;
+
+        .title {
+            font-size: 2.5rem;
+        }
+    }
+    .services-info {
+        align-items: flex-start;
+        padding-left: 10%;
+
+    }
+
+    /* Methodology */
+    .methodology {
+        padding: 10rem 0 4rem;
+        
+        .title {
+            font-size: 2.5rem;
+        }
+    }
+    .card-methodology-container {
+        flex-direction: row;
+    }
+
+    /* Experienced */
+    .experienced {
+        padding: 10rem 0 4rem;
+        
+        .title {
+            margin-bottom: 2.5rem;
+            font-size: 2.5rem;
+            text-align: left;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+    .exp-lists {
+        padding-left: 8rem;
+
+        .list {
+            .title {
+                font-size: 1.5rem;
+            }
+            .date {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    /* Footer */
+    .footer {
+        padding: 6rem 0;
+    }
+
+    .big-email {
+        padding: 3.5rem;
+        width: 80%;
+
+        span {
+            font-size: 1.4rem;
+        }
+        a {
+            font-size: 3rem;
+        }
+    }
+}

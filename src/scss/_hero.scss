@@ -1,0 +1,56 @@
+
+/* Hero */
+.hero {
+    position: relative;
+}
+
+.hero-bg {
+    position: relative;
+    padding: 10rem 0;
+    overflow: hidden;
+    background: url("/src/images/portfolio-pattern.jpg") left no-repeat;
+}
+
+.hero-img {
+    display: none;
+    position: absolute;
+    top: 22%;
+    right: -65%;
+    width: 145%;
+}
+
+.hero-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $darkblue;
+}
+
+.hero-subtitle {
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: -webkit-linear-gradient(92deg, #ffc507, #fb6e1e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-descrip {
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: $gray;
+    font-size: 0.9rem;
+    line-height: 2;
+    max-width: 550px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.7px;
+    text-align: center;
+}

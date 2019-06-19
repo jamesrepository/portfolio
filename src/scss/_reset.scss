@@ -5,7 +5,11 @@ html {
 
 body {
     -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
+    
+    &.is-visible {
+        overflow: hidden;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -28,41 +32,42 @@ h1, h2, h3, h4, h5 {
     box-shadow: 0px 4px 15px #42a5f5;
 }
 
-.angle-before {
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
-    margin-top: -101px !important;
-}
-
-.angle-after {
-    position: relative;
-    top: -1px;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
-    margin-bottom: -101px !important;
-}
-
-.angle-after.white {
-    background: #fff;
-    padding: 50px 0;
-    margin-bottom: -100px !important;
-}
-
-.angle-after.gray {
-    background: #fafbfb;
-    padding: 50px 0;
-    margin-bottom: -99px !important;
-}
-
-.angle-after.yellow {
-    position: relative;
-    top: -1px;
-    padding: 50px 0;
-    background: #fbb03b;
-}
-
 .padding-b-70 {
     padding-bottom: 7rem;
 }
 
 .padding-b-150 {
     padding-bottom: 15rem;
+}
+
+.diagonal {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    line-height: 0;
+    z-index: 99;
+    svg {
+        width: 100%;
+        height: 100%;
+        
+        polygon {
+            fill: #fff;
+        }
+    }
+
+    &.lightgray {
+        svg {
+            polygon {
+                fill: $lightgray;
+            }
+        }
+    }
+
+    &.yellow {
+        svg {
+            polygon {
+                fill: $yellow;
+            }
+        }
+    }
 }

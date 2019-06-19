@@ -1,0 +1,29 @@
+/* Services */
+.services {
+    position: relative;
+    padding: 5rem 0 1rem;
+    background: $white;
+    
+    .title {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #242f51;
+    }
+
+    .img-fluid {
+        margin-bottom: 4rem;
+    }
+
+    p {
+        color: $gray;
+    }
+}
+
+.services-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}

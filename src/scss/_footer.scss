@@ -1,0 +1,30 @@
+/* Footer */
+.footer {
+    padding: 0 0 2rem;
+}
+
+.big-email {
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid #ebebeb;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0px 15px 25px #ebebeb;
+
+    span {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+        color: #a9a8b9;
+    }
+
+    a {
+        display: block;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #6c63ff;
+    }
+}
