@@ -1,3 +1,18 @@
+@media only screen and (min-width: 400px) {
+    .works-container {
+        padding: 0 10%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    /* Footer */
+    .big-email {
+        a {
+            font-size: 1.6rem;
+        }
+    }
+}
+
 @media only screen and (min-width: 768px) {
     /* Reset */
     .diagonal {
@@ -40,6 +55,9 @@
     }
     .hero-img {
         display: block;
+        width: 220%;
+        top: 30%;
+        right: -130%;
     }
 
     .mobile-menu {
@@ -55,7 +73,9 @@
     }
 
     .works-container {
+        padding: 0;
         flex-direction: row;
+        justify-content: center;
     }
 
     /* Services */
@@ -80,9 +100,6 @@
             font-size: 2.5rem;
         }
     }
-    .card-methodology-container {
-        flex-direction: row;
-    }
 
     /* Experienced */
     .experienced {
@@ -96,10 +113,13 @@
 
         p {
             font-size: 1rem;
+            text-align: left;
         }
     }
     .exp-lists {
         padding-left: 8rem;
+        max-width: 100%;
+
 
         .list {
             .title {
@@ -123,6 +143,28 @@
         span {
             font-size: 1.4rem;
         }
+        a {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Hero */
+    .hero-img {
+        top: 22%;
+        right: -65%;
+        width: 145%;
+    }
+
+    /* Methodology */
+    .card-methodology-container {
+        flex-direction: row;
+        align-items: inherit;
+    }
+
+    /* Footer */
+    .big-email {
         a {
             font-size: 3rem;
         }

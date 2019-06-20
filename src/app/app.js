@@ -29,21 +29,24 @@ const toggle = function (elem) {
 	elem.classList.toggle('is-visible');
 };
 
-// Check if screen size is bigger
-const windowSize = document.documentElement.clientWidth;
-if(windowSize >= 768) {
-    // Adjust Element base on window size
+window.addEventListener('resize', getHeroHeight);
+document.addEventListener("DOMContentLoaded", getHeroHeight);
+
+function getHeroHeight() {
+    // Check if screen size is bigger
+    const windowSize = window.innerWidth;
     // hero-info
     const headerInfo = document.querySelector('.hero-info');
     
-    document.addEventListener("DOMContentLoaded", getHeroHeight);
-    window.addEventListener('resize', getHeroHeight);
-    
-    function getHeroHeight() {
-        headerInfo.style.minHeight = `${window.innerHeight}px`;
-        // console.log(window.innerHeight);
+    if(windowSize > 767) {
+        // Adjust Element base on window size
+        headerInfo.style.height = `${window.innerHeight}px`;
+    } else {
+        headerInfo.style.height = `auto`;
+    }
 }
-}
+
+
 
 import ScrollReveal from 'scrollreveal'
 const slideUpHead = {
