@@ -35,8 +35,26 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                template: "./src/works.html",
-                filename: "works.html",
+                template: "./src/works-philzter.html",
+                filename: "philzter.html",
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                template: "./src/works-craveable-support.html",
+                filename: "craveable-support.html",
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                template: "./src/works-ymca.html",
+                filename: "ymca.html",
                 minify: {
                     removeAttributeQuotes: true,
                     collapseWhitespace: true,

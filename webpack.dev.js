@@ -26,8 +26,16 @@ module.exports = merge(common, {
             template: "./src/template.html"
         }),
         new HtmlWebpackPlugin({
-            template: "./src/works.html",
-            filename: "works.html"
-        })
+            template: "./src/works-philzter.html",
+            filename: "philzter.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/works-craveable-support.html",
+            filename: "craveable-support.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/works-ymca.html",
+            filename: "ymca.html"
+        }),
     ]
 });

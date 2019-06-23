@@ -78,6 +78,20 @@
         justify-content: center;
     }
 
+    /* Works Single */
+    .work-data {
+        padding: 10rem 0 0;
+        text-align: left;
+
+        .title {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
     /* Services */
     .services {
         padding: 10rem 0 6rem;
@@ -161,6 +175,13 @@
     .card-methodology-container {
         flex-direction: row;
         align-items: inherit;
+    }
+
+    /* Work Single */
+    .work-data--img {
+        margin-top: 0;
+        margin-left: 15%;
+        width: 190%;
     }
 
     /* Footer */

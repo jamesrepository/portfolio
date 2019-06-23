@@ -37,12 +37,14 @@ function getHeroHeight() {
     const windowSize = window.innerWidth;
     // hero-info
     const headerInfo = document.querySelector('.hero-info');
-    
-    if(windowSize > 767) {
-        // Adjust Element base on window size
-        headerInfo.style.height = `${window.innerHeight}px`;
-    } else {
-        headerInfo.style.height = `auto`;
+    if(headerInfo) {
+
+        if(windowSize > 767) {
+            // Adjust Element base on window size
+            headerInfo.style.height = `${window.innerHeight}px`;
+        } else {
+            headerInfo.style.height = `auto`;
+        }
     }
 }
 
