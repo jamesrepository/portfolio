@@ -23,6 +23,18 @@ mobileMenu.addEventListener('click', function() {
     toggle(body);
 });
 
+const mobileMenuItems = document.querySelectorAll('.mobile-menu-box .menu .menu-item a');
+for (const mobileMenuItem of mobileMenuItems) {
+    mobileMenuItem.addEventListener('click', function(e) {
+        // set timeout / delay for transition
+        // trigger close mobile-menu
+        mobileMenu.click();
+    })
+  }
+// mobileMenuItem.addEventListener('click', function() {
+//     console.log('click');
+// })
+
 
 // Toggle element visibility
 const toggle = function (elem) {
@@ -47,7 +59,13 @@ function getHeroHeight() {
         }
     }
 }
-
+  
+// Scroll certain amounts from current position 
+window.scrollBy({ 
+top: 0, // could be negative value
+left: 0, 
+behavior: 'smooth' 
+});
 
 
 import ScrollReveal from 'scrollreveal'
